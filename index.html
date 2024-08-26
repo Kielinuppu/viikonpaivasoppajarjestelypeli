@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Viikonpäivien järjestämispeli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="white-background">
+        <div class="container">
+            <h1>ASETA VIIKONPÄIVÄT OIKEAAN JÄRJESTYKSEEN</h1>
+            <div id="target" class="drop-zone">
+                <div class="drop-box" data-index="1"></div>
+                <div class="drop-box" data-index="2"></div>
+                <div class="drop-box" data-index="3"></div>
+                <div class="drop-box" data-index="4"></div>
+                <div class="drop-box" data-index="5"></div>
+                <div class="drop-box" data-index="6"></div>
+                <div class="drop-box" data-index="7"></div>
+            </div>
+            <div id="source" class="image-zone">
+                <img src="maanantai.avif" alt="Maanantai" class="draggable" data-audio="maanantai.mp3" data-index="1">
+                <img src="tiistai.avif" alt="Tiistai" class="draggable" data-audio="tiistai.mp3" data-index="2">
+                <img src="keskiviikko.avif" alt="Keskiviikko" class="draggable" data-audio="keskiviikko.mp3" data-index="3">
+                <img src="torstai.avif" alt="Torstai" class="draggable" data-audio="torstai.mp3" data-index="4">
+                <img src="perjantai.avif" alt="Perjantai" class="draggable" data-audio="perjantai.mp3" data-index="5">
+                <img src="lauantai.avif" alt="Lauantai" class="draggable" data-audio="lauantai.mp3" data-index="6">
+                <img src="sunnuntai.avif" alt="Sunnuntai" class="draggable" data-audio="sunnuntai.mp3" data-index="7">
+            </div>
+            <div id="result-container" class="hidden">
+                <div class="stars">
+                    <img src="tahti.avif" alt="Tähti">
+                    <img src="tahti.avif" alt="Tähti">
+                    <img src="tahti.avif" alt="Tähti">
+                </div>
+                <button id="playAgain">PELAA UUDELLEEN</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
